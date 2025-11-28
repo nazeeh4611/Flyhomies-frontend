@@ -13,10 +13,13 @@ import { VoIP } from './Components/Pages/VoIp';
 import { WebDevelopment } from './Components/Pages/WebDevlopment';
 import { SoftwareDevelopment } from './Components/Pages/SoftwareDevlopment';
 import { DigitalMarketing } from './Components/Pages/DigitelMarketing';
+import ScrollToTop from './Scroll';
+
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />  
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
