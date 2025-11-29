@@ -5,80 +5,161 @@ import SEO from '../SEO';
 
 export function WebDevelopment() {
   return (
-    <div className="pt-20 bg-white text-gray-800">
+    <div className="pt-20 bg-white text-gray-900">
       <SEO
-        title="Web Development Services | Custom Website Solutions"
-        description="Professional web development services including custom websites, e-commerce solutions, and responsive design. Partnered with FlyHomies Associates."
-        keywords="web development, website design, e-commerce, responsive design, CMS"
+        title="Web Development Services | FlyHomies Associates"
+        description="Professional web development services including custom websites, e-commerce platforms, CMS solutions, and performance-optimized applications."
+        keywords="web development, website design, ecommerce, cms, flyhomies development"
       />
 
-      <section className="relative bg-gradient-to-br from-gray-50 to-blue-50 border-b border-gray-200 overflow-hidden">
+      {/* HERO SECTION */}
+      <section className="border-b border-gray-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
-              <span className="bg-gradient-to-r from-gray-900 to-blue-700 bg-clip-text text-transparent">
-                Web Development
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Innovative bespoke website solutions through our collaboration with FlyHomies Associates
-            </p>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+            Web Development
+          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl">
+            Build powerful, scalable, and visually stunning websites with FlyHomies Associates.
+            Our approach focuses on clean UI, fast performance, and delivering a seamless user experience.
+          </p>
+        </div>
+      </section>
+
+      {/* OUR APPROACH */}
+      <section className="py-20 bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            <div>
+              <h2 className="text-4xl font-bold mb-6">Our Approach</h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                We don’t just build websites — we craft digital experiences that turn visitors into customers.
+                Every project goes through research, wireframing, UI/UX design, development, testing, and launch.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  'Research & Requirement Understanding',
+                  'UI / UX Wireframing & Planning',
+                  'Clean, Scalable Frontend Development',
+                  'Secure & Robust Backend Development',
+                  'SEO-Friendly & Performance Optimized',
+                  'Quality Assurance & Testing'
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle className="text-black mt-1" size={20} />
+                    <span className="text-gray-800">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl p-12 border border-gray-300 flex items-center justify-center bg-white shadow-lg">
+      
+              <img
+                  src="/dev.svg"
+                  alt="Dubai"
+                  className="w-full max-w-md object-contain"
+                />
+           
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      {/* WHAT WE OFFER */}
+      <section className="py-20 bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Custom Web Solutions
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We focus on creating user-friendly, visually appealing, and functional websites that deliver exceptional customer experience.
-              </p>
 
-              <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">What We Offer</h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {['Custom Website Development', 'Responsive Web Design', 'E-commerce Solutions', 'Content Management Systems', 'Website Optimization', 'Ongoing Maintenance & Support'].map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-300">
-                      <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <h2 className="text-4xl font-bold mb-10 text-center">What We Offer</h2>
 
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 mb-6">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Key Benefits</h3>
-                <ul className="space-y-3">
-                  {['Visually striking and user-friendly websites', 'Enhanced customer experience', 'Measurable success aligned with goals', 'Modern and functional designs'].map((benefit, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-gray-700">
-                      <div className="w-2 h-2 bg-gradient-to-r from-gray-900 to-gray-700 rounded-full"></div>
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="grid md:grid-cols-3 gap-10">
 
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-xl hover:from-gray-800 hover:to-gray-600 transition-all duration-300 text-lg font-medium group hover:scale-105 hover:shadow-xl"
+            {[
+              {
+                title: 'Custom Website Development',
+                desc: 'Unique designs & custom-built functionalities based on your business needs.'
+              },
+              {
+                title: 'E-Commerce Solutions',
+                desc: 'Scalable e-commerce stores with cart, checkout, payment gateway, and admin panel.'
+              },
+              {
+                title: 'Responsive & Modern UI',
+                desc: 'Pixel-perfect, mobile-friendly, and ultra-fast layouts.'
+              },
+              {
+                title: 'CMS Development',
+                desc: 'Manage your content easily with WordPress, Strapi, Sanity, or custom CMS.'
+              },
+              {
+                title: 'Website Speed Optimization',
+                desc: 'Improve load speed, SEO performance, Core Web Vitals, and search ranking.'
+              },
+              {
+                title: 'Maintenance & Support',
+                desc: 'Monthly website updates, bug fixes, backup, and monitoring.'
+              }
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="p-8 border border-gray-300 rounded-xl bg-white hover:shadow-xl transition-all"
               >
-                Start Your Project
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-12 aspect-square flex items-center justify-center border border-gray-300 shadow-xl">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🌐</div>
-                <p className="text-gray-600 font-medium">Web Development</p>
-                <p className="text-sm text-gray-500">Custom Solutions</p>
+                <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{card.desc}</p>
               </div>
-            </div>
+            ))}
+
           </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="py-20 bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <h2 className="text-4xl font-bold mb-10 text-center">Why Choose FlyHomies?</h2>
+
+          <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-800">
+            {[
+              'Clean, modern, and professional UI / UX',
+              'Scalable backend architecture',
+              'SEO-ready & optimized for speed',
+              'Fully mobile responsive and cross-device compatible',
+              'Secure coding with best practices',
+              'Real-time features like chat, notifications, WebRTC',
+              'Complete dashboard & admin panel development',
+              'Transparent workflow with updates'
+            ].map((txt, i) => (
+              <li key={i} className="flex gap-3 items-start">
+                <span className="w-2 h-2 bg-black rounded-full mt-2"></span>
+                {txt}
+              </li>
+            ))}
+          </ul>
+
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+
+          <h2 className="text-4xl font-bold mb-6">Ready to Build Your Website?</h2>
+          <p className="text-lg text-gray-700 mb-10">
+            Let’s bring your vision to life with a high-performance, beautifully designed website.
+            We work closely with every client to deliver exactly what they need.
+          </p>
+
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-3 bg-black text-white px-10 py-4 rounded-xl hover:bg-gray-800 transition-all text-lg font-medium"
+          >
+            Start Your Project
+            <ArrowRight size={20} />
+          </Link>
+
         </div>
       </section>
     </div>

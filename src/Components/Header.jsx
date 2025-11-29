@@ -19,9 +19,10 @@ export default function Navbar() {
 
   const servicesDropdown = [
     { name: "Web Development", path: "/services/web-development", icon: "🌐" },
-    { name: "VoIP Solutions", path: "/services/voip", icon: "📞" },
     { name: "Software Development", path: "/services/software-development", icon: "💻" },
+    { name: "App Development", path: "/services/app-development", icon: "💻" },
     { name: "Digital Marketing", path: "/services/digital-marketing", icon: "📱" },
+    { name: "VoIP Solutions", path: "/services/voip", icon: "📞" },
   ];
 
   const isActiveLink = (path) => {

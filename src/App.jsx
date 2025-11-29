@@ -14,6 +14,7 @@ import { WebDevelopment } from './Components/Pages/WebDevlopment';
 import { SoftwareDevelopment } from './Components/Pages/SoftwareDevlopment';
 import { DigitalMarketing } from './Components/Pages/DigitelMarketing';
 import ScrollToTop from './Scroll';
+import { MobileAppDevelopment } from './Components/Pages/AppDev';
 
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/services/voip" element={<VoIP />} />
             <Route path="/services/software-development" element={<SoftwareDevelopment />} />
             <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/services/app-development" element={<MobileAppDevelopment />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />

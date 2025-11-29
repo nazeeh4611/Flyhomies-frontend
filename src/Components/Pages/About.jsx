@@ -205,6 +205,8 @@ export function About() {
           </div>
         </div>
       </section>
+
+      {/* Timeline Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection>
@@ -322,9 +324,6 @@ export function About() {
         </div>
       </section>
 
-      {/* Timeline Section */}
-  
-
       {/* Company Stats */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -360,6 +359,67 @@ export function About() {
               </FadeInSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Meet Our Team Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+                <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                  Meet Our Team
+                </span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Get to know the brilliant minds behind Nacrosoft Technology and FlyHomies Associates - the passionate professionals driving innovation and excellence.
+              </p>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection delay={200}>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Team Member 1 */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group text-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-gray-300 to-gray-400 flex items-center justify-center group-hover:from-gray-400 group-hover:to-gray-500 transition-all duration-300">
+                  <Users size={48} className="text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">Leadership Team</h3>
+                <p className="text-gray-600 mb-4">Visionary leaders guiding our strategic direction</p>
+              </div>
+
+              {/* Team Member 2 */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group text-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-700 transition-all duration-300">
+                  <Lightbulb size={48} className="text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">Development Experts</h3>
+                <p className="text-gray-600 mb-4">Skilled developers creating cutting-edge solutions</p>
+              </div>
+
+              {/* Team Member 3 */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group text-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center group-hover:from-purple-500 group-hover:to-purple-700 transition-all duration-300">
+                  <Heart size={48} className="text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">Creative Team</h3>
+                <p className="text-gray-600 mb-4">Design wizards crafting beautiful user experiences</p>
+              </div>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection delay={400}>
+            <div className="text-center">
+              <Link
+                to="/team"
+                className="inline-flex items-center bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-xl hover:from-gray-800 hover:to-gray-600 transition-all duration-300 hover:scale-105 hover:shadow-xl font-medium group"
+              >
+                Meet Our Full Team
+                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
