@@ -415,7 +415,7 @@ export function About() {
                 to="/team"
                 className="inline-flex items-center bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-xl hover:from-gray-800 hover:to-gray-600 transition-all duration-300 hover:scale-105 hover:shadow-xl font-medium group"
               >
-                Meet Our Full Team
+                Meet Our Team
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
