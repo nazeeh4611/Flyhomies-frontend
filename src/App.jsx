@@ -15,6 +15,8 @@ import { SoftwareDevelopment } from './Components/Pages/SoftwareDevlopment';
 import { DigitalMarketing } from './Components/Pages/DigitelMarketing';
 import ScrollToTop from './Scroll';
 import { MobileAppDevelopment } from './Components/Pages/AppDev';
+import { PrivacyPolicy } from './Components/Pages/Privacy';
+import { TermsConditions } from './Components/Pages/Terms';
 
 
 export default function App() {
@@ -36,6 +38,8 @@ export default function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+            <Route path='/terms-conditions' element={<TermsConditions/>}/>
           </Routes>
         </main>
         <Footer />
