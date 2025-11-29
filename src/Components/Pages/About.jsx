@@ -343,9 +343,9 @@ export function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { value: "9", suffix: "+", label: "Years Experience" },
-              { value: "300", suffix: "+", label: "Team Members" },
+              { value: "100", suffix: "+", label: "Happy Clients" },
               { value: "7", suffix: "+", label: "Countries Served" },
-              { value: "500", suffix: "+", label: "Projects Completed" },
+              { value: "100", suffix: "+", label: "Projects Completed" },
             ].map((stat, index) => (
               <FadeInSection key={index} delay={index * 150}>
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200 hover:shadow-lg transition-all duration-500 hover:-translate-y-1">

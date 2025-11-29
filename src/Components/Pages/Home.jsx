@@ -307,7 +307,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
-              { value: "300", suffix: "+", label: "Team Members" },
+              { value: "100+", suffix: "+", label: "Happy Clients" },
               { value: "7", suffix: "+", label: "Countries" },
               { value: "9", suffix: "+", label: "Years Experience" },
               { value: "2020", suffix: "", label: "Dubai Operations Started" },
@@ -765,7 +765,7 @@ export default function Home() {
                     { 
                       icon: <Users className="text-gray-800" size={20} />, 
                       title: "Expert Team", 
-                      desc: "300+ strong team with expertise across multiple technologies and domains." 
+                      desc: "strong team with expertise across multiple technologies and domains." 
                     },
                     { 
                       icon: <TrendingUp className="text-gray-800" size={20} />, 

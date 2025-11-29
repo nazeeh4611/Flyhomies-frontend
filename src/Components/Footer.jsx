@@ -1,39 +1,12 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white">
-
-      {/* Newsletter Section */}
-      {/* <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl mb-2">Stay Updated</h3>
-              <p className="text-blue-100">
-                Subscribe to our newsletter for the latest insights and updates
-              </p>
-            </div>
-
-            <div className="flex w-full md:w-auto gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 outline-none focus:ring-2 focus:ring-white/50 flex-1 md:w-80"
-              />
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2 whitespace-nowrap">
-                Subscribe
-                <ArrowRight size={18} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -42,35 +15,58 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white">FH</span>
+              <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold">FH</span>
               </div>
-              <span className="text-xl">Flyhomies Associates</span>
+              <span className="text-xl font-semibold">Flyhomies Associates</span>
             </div>
 
             <p className="text-gray-400 mb-6 max-w-md">
-              Leading IT consultation firm specializing in digital transformation, cloud solutions, and innovative technology services.
+              Leading IT consultation and digital solution provider specializing in software development,
+              VoIP services, cloud systems, digital marketing, and enterprise solutions.
             </p>
 
+            {/* Social Links */}
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/company/flyhomiesassociates/"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+
+              <a
+                href="https://www.instagram.com/flyhomies_associates/"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 hover:bg-pink-500 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook">
+
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
+
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter size={20} />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
@@ -79,7 +75,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/team" className="text-gray-400 hover:text-white transition-colors">
-                  Our Team
+                  Founders
                 </Link>
               </li>
               <li>
@@ -97,26 +93,31 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/services#cloud" className="text-gray-400 hover:text-white transition-colors">
-                  Cloud Solutions
+                <Link to="/services/web-development" className="text-gray-400 hover:text-white transition-colors">
+                  Web Development
                 </Link>
               </li>
               <li>
-                <Link to="/services#security" className="text-gray-400 hover:text-white transition-colors">
-                  Cybersecurity
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#development" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services/software-development" className="text-gray-400 hover:text-white transition-colors">
                   Software Development
                 </Link>
               </li>
               <li>
-                <Link to="/services#analytics" className="text-gray-400 hover:text-white transition-colors">
-                  Data Analytics
+                <Link to="/services/voip" className="text-gray-400 hover:text-white transition-colors">
+                  VoIP Solutions
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing" className="text-gray-400 hover:text-white transition-colors">
+                  Digital Marketing
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/app-development" className="text-gray-400 hover:text-white transition-colors">
+                  Mobile App Development
                 </Link>
               </li>
             </ul>
@@ -124,23 +125,27 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="mb-4">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-gray-400">
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-4">
+
+              <li className="flex items-start gap-3 text-gray-400">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <span>
-                  123 Tech Boulevard<br />
-                  San Francisco, CA 94105
+                  Iris Bay Tower, Business Bay,<br />
+                  Dubai, UAE
                 </span>
               </li>
+
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone size={20} className="flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+971 50 431 6900</span>
               </li>
+
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail size={20} className="flex-shrink-0" />
                 <span>info@flyhomies.com</span>
               </li>
+
             </ul>
           </div>
 
