@@ -40,7 +40,7 @@ export default function Team() {
 
           {/* CONTENT */}
           <div>
-            <h2 className="text-4xl font-bold mb-2">Sarah Johnson</h2>
+            <h2 className="text-4xl font-bold mb-2"> Jabir</h2>
             <p className="text-lg text-gray-600 mb-4">Founder & CEO</p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -75,7 +75,7 @@ export default function Team() {
 
           {/* CONTENT FIRST ON MOBILE */}
           <div className="md:order-1 order-2">
-            <h2 className="text-4xl font-bold mb-2">Michael Chen</h2>
+            <h2 className="text-4xl font-bold mb-2">Hanzitha Moideen</h2>
             <p className="text-lg text-gray-600 mb-4">Co-Founder</p>
 
             <p className="text-gray-700 leading-relaxed mb-8">

@@ -40,7 +40,7 @@ export function Team() {
 
           {/* CONTENT */}
           <div>
-            <h2 className="text-4xl font-bold mb-2">Sarah Johnson</h2>
+            <h2 className="text-4xl font-bold mb-2"> Jabir</h2>
             <p className="text-lg text-gray-600 mb-4">Founder & CEO</p>
 
             <p className="text-gray-700 leading-relaxed mb-8">

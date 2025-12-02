@@ -584,52 +584,58 @@ export default function Home() {
     {/* Work grid */}
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
       {[
-        {
-          title: "VoIP Infrastructure Setup",
-          description: "Complete VOS 3000 implementation with custom dialers for a telecom client in Dubai",
-          category: "VoIP Solutions",
-          results: ["300% ROI", "99.9% Uptime", "Scalable Architecture"]
-        },
-        {
-          title: "E-commerce Platform",
-          description: "Full-stack e-commerce solution with payment integration and inventory management",
-          category: "Web Development",
-          results: ["40% Growth", "Seamless UX", "Mobile Optimized"]
-        },
-        {
-          title: "Business Automation Suite",
-          description: "Custom CRM and automation tools for enterprise client with multi-location operations",
-          category: "Software Development",
-          results: ["60% Efficiency", "Real-time Analytics", "Cloud Native"]
-        },
-        {
-          title: "Mobile Banking App",
-          description: "Secure mobile banking application with biometric authentication and real-time transactions",
-          category: "App Development",
-          results: ["4.8★ Rating", "500K+ Users", "Bank-grade Security"]
-        },
-        {
-          title: "Enterprise ERP System",
-          description: "Custom ERP solution for manufacturing company with inventory and supply chain management",
-          category: "ERP Solutions",
-          results: ["45% Cost Save", "Real-time Tracking", "Multi-location"]
-        },
-        {
-          title: "CRM Systems",
-          description: "Customer Relationship Management solutions to streamline sales, support, and customer engagement.",
-          category: "CRM Solutions",
-          results: [
-            "Lead Management",
-            "Sales Pipeline",
-            "Customer Support",
-            "Automation & Workflows"
-          ]
-        },
-      ].map((project, index) => (
+  {
+    title: "DD Events UAE – Event Management",
+    description: "A creative event management website showcasing premium event planning services in Dubai, designed to bring client visions to life with style and precision.",
+    category: "Event Management",
+    results: ["Dubai-Based", "Creative Planning", "Premium Events", "High Engagement"],
+    image: '/dd.png', 
+  },
+  {
+    title: "Simpolo Trading – Building Materials",
+    description: "A premium website for a trusted UAE-based supplier offering high-quality building materials since 2005, showcasing a wide range of durable and modern products.",
+    category: "Building Materials Supplier",
+    results: ["Since 2005", "Premium Materials", "UAE Trusted Supplier", "Product Showcase"],
+    image: '/sim.png', 
+  },
+  {
+    title: "Wavescation Holiday Homes",
+    description: "DTCM-licensed premium holiday home management in Dubai, specializing in short-term rentals with 5-star hospitality standards.",
+    category: "Property Management",
+    results: ["DTCM Licensed", "Premium Locations", "5-Star Standards", "In-House Maintenance"],
+    image: '/wave.png',
+  },
+  {
+    title: "The Foscape Aquatic Care",
+    description: "World-class aquatic care services for aquariums, fountains, water gardens, pools, spas, and lake management across South India.",
+    category: "Aquatic Services",
+    results: ["Residential & Commercial", "Expert Maintenance", "South India Coverage", "Custom Solutions"],
+    image: '/fos.png',
+  },
+  {
+    title: "MVEWORLD Creative Production",
+    description: "Creative production agency specializing in filmmaking, advertisements, and event management across Dubai and India.",
+    category: "Creative Agency",
+    results: ["Expert Filmmaking", "Brand Storytelling", "Event Management", "Multi-Location"],
+    image: '/mve.png',
+  },
+  {
+    title: "HH Mobiles & Gadgets",
+    description: "Premium mobile phones and accessories retailer in Dubai offering the latest gadgets with expert support.",
+    category: "E-Commerce Retail",
+    results: ["Dubai Based", "Latest Gadgets", "Expert Service", "Accessories"],
+    image: '/hh.png',
+
+  }
+].map((project, index) => (
         <FadeInSection key={index} delay={index * 100} mobileDelay={index * 50}>
           <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 group border border-gray-200 hover:-translate-y-2 overflow-hidden hover:border-gray-300">
             <div className="h-40 md:h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
-              <div className="text-4xl text-gray-600 group-hover:scale-110 transition-transform duration-500">🚀</div>
+            <img
+    src={project.image}
+    alt="icon"
+    className="w-full h-full object-cover"
+  />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="p-4 md:p-6">
