@@ -96,7 +96,7 @@ export function MobileAppDevelopment() {
             {/* RIGHT IMAGE */}
             <div className="rounded-2xl p-12 border border-gray-300 bg-white shadow-lg flex items-center justify-center">
               <img
-                src="/App.webp"
+                src="/App.svg"
                 alt="Mobile App"
                 className="w-full max-w-md object-contain"
               />

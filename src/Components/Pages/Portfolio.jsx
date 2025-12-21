@@ -343,10 +343,11 @@ export default function Portfolio() {
 
               <div className="relative z-10">
                 <div className="bg-white rounded-xl p-8 aspect-video mb-8 shadow-sm flex items-center justify-center border border-gray-200">
-                  <div className="text-center">
-                    <div className="text-5xl mb-4 animate-bounce-slow">🚀</div>
-                    <p className="text-gray-600 font-medium">Launch Your Project</p>
-                  </div>
+                <img
+                  src="/launch.svg"
+                  alt="hero illustration"
+                  className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
+                />
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 leading-tight">

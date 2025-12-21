@@ -194,7 +194,7 @@ export default function Contact() {
               {/* Illustration */}
               <div className="bg-gray-100 rounded-3xl p-12 flex items-center justify-center mb-8 animate-[float_3s_ease-in-out_infinite]">
               <img
-                    src="/cus.webp"
+                    src="/cus.svg"
                     alt="hero illustration"
                     className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
                   />

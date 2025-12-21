@@ -265,7 +265,7 @@ export default function Home() {
               <div className="flex justify-center order-first md:order-last">
                 <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
                   <img
-                    src="/DesignHERO.webp"
+                    src="/DesignHERO.svg"
                     alt="Digital Solutions Illustration"
                     className="w-full h-auto object-contain transition-all duration-1000 hover:scale-105 hover:rotate-1"
                     loading="eager"
@@ -439,7 +439,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-md">
                   <img
-                    src="/App.webp"
+                    src="/App.svg"
                     alt="Mobile App Development"
                     className="w-full h-auto object-contain transition-all duration-1000 hover:scale-105"
                     loading="lazy"
@@ -716,7 +716,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg p-6 md:p-8 border border-gray-300 shadow-lg w-full max-w-md hover:shadow-xl transition-all duration-500 group">
                   <div className="text-center">
                     <img
-                      src="/Dubai.webp"
+                      src="/Dubai.svg"
                       alt="Dubai"
                       className="w-full max-w-md object-contain group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -744,7 +744,7 @@ export default function Home() {
             <FadeInSection mobileDelay={100}>
               <div className="flex justify-center order-first lg:order-last">
                 <img
-                  src="/choose.webp"
+                  src="/choose.svg"
                   alt="Why Choose Us"
                   className="w-full max-w-md object-contain hover:scale-105 transition-transform duration-500"
                   loading="lazy"
