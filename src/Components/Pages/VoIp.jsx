@@ -95,7 +95,7 @@ export function VoIP() {
             {/* RIGHT IMAGE */}
             <div className="rounded-2xl p-12 border border-gray-300 bg-white shadow-lg flex items-center justify-center">
               <img
-                src="/Call.svg"
+                src="/Call.webp"
                 alt="VoIP"
                 className="w-full max-w-md object-contain"
               />

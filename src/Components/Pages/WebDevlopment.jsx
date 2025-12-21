@@ -57,7 +57,7 @@ export function WebDevelopment() {
             <div className="rounded-2xl p-12 border border-gray-300 flex items-center justify-center bg-white shadow-lg">
       
               <img
-                  src="/dev.svg"
+                  src="/dev.webp"
                   alt="Dubai"
                   className="w-full max-w-md object-contain"
                 />

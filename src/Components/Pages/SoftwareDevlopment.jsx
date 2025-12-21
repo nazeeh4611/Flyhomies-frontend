@@ -90,7 +90,7 @@ export function SoftwareDevelopment() {
             {/* RIGHT IMAGE */}
             <div className="rounded-2xl p-12 border border-gray-300 bg-white shadow-lg flex items-center justify-center">
               <img
-                src="/soft.svg"
+                src="/soft.webp"
                 alt="Software Development"
                 className="w-full max-w-md object-contain"
               />

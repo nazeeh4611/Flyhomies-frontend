@@ -177,7 +177,7 @@ export function About() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-black-400 to-black-500 rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
                 <img
-                  src="/story.svg"
+                  src="/story.webp"
                   alt="hero illustration"
                   className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
                 />
