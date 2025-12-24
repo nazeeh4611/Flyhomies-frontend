@@ -32,7 +32,7 @@ export function Team() {
           {/* IMAGE */}
           <div>
             <ImageWithFallback
-              src="/founder.jpg"
+              src="/founder.webp"
               alt="Founder / CEO"
               className="w-full h-[420px] object-cover rounded-2xl shadow-md"
             />
@@ -105,7 +105,7 @@ export function Team() {
           {/* IMAGE */}
           <div className="md:order-2 order-1">
             <ImageWithFallback
-              src="/cofounder.jpg"
+              src="/co-founder.webp"
               alt="Co-Founder"
               className="w-full h-[420px] object-cover rounded-2xl shadow-md"
             />
