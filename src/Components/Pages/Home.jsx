@@ -574,8 +574,7 @@ export default function Home() {
                 <ResponsiveTypewriter />
 
                 <p className="animate-item text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed px-2 md:px-0">
-                  Building reliable, high-performance software solutions tailored to the unique needs of both B2B and B2C brands since 2015. Now expanding our expertise from Dubai to serve global clients.
-                </p>
+                Full-stack software development agency specializing in AI automation, scalable web platforms, and mobile experiences.                </p>
 
                 <div className="animate-item flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
                   <ShakingButton
