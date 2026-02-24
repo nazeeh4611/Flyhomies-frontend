@@ -158,7 +158,7 @@ export function About() {
                 <div className="relative w-full max-w-lg">
                   <div className="absolute inset-0 bg-gradient-to-r from-black-400 to-black-500 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
                   <img
-                    src="/flylogo.png"
+                    src="/fh.png"
                     alt="hero illustration"
                     className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
                   />

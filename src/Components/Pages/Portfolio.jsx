@@ -44,6 +44,45 @@ function FadeInSection({ children, delay = 0 }) {
 
 const projects = [
   {
+    title: 'Alrkn Alraqy Hotel Management',
+    client: 'Alrkn Alraqy',
+    category: 'Hotel Management & Booking',
+    description: 'Dubai and Middle East based hotel management and booking platform featuring luxury accommodations, real-time availability, and seamless reservation system.',
+    image: '/alr.png',
+    results: ['Dubai & Middle East', 'Hotel Management', 'Real-time Booking', 'Luxury Properties'],
+    technologies: ['Hotel Booking', 'Property Management', 'Payment Integration', 'CRM'],
+    duration: '2 weeks',
+    year: '2026',
+    link: 'https://www.alrknalraqy.in/',
+    location: 'Dubai & Middle East'
+  },
+  {
+    title: 'Eventra – Club Event Booking',
+    client: 'Eventra',
+    category: 'Event Booking Platform',
+    description: 'Dubai-based club event and party booking platform built with MERN stack, offering seamless event discovery, booking management, and venue partnerships.',
+    image: '/evnt.png',
+    results: ['Dubai-Based', 'MERN Stack', 'Real-time Booking', 'Venue Partnerships'],
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Payment Gateway'],
+    duration: '2 weeks',
+    year: '2026',
+    link: 'https://eventra.club/',
+    location: 'Dubai, UAE'
+  },
+  {
+    title: 'Secondwave – Digital Marketing',
+    client: 'Secondwave',
+    category: 'Digital Marketing Agency',
+    description: 'Kerala-based digital marketing agency website showcasing comprehensive marketing solutions, SEO services, social media management, and creative campaigns.',
+    image: '/sec.png',
+    results: ['Kerala-Based', 'Full Service Agency', 'Performance Marketing', 'Creative Campaigns'],
+    technologies: ['Digital Marketing', 'SEO', 'Social Media', 'Content Strategy'],
+    duration: '1 week',
+    year: '2026',
+    link: 'https://secondwave.in/',
+    location: 'Kerala, India'
+  },
+  {
     title: 'DD Events UAE – Event Management',
     client: 'DD Events UAE',
     category: 'Event Management',
@@ -55,8 +94,20 @@ const projects = [
     year: '2025',
     link: 'https://ddeventsuae.com/',
     location: 'Dubai, UAE'
-  }
-,  
+  },
+  {
+    title: 'Arreen Medical – Clinical System',
+    client: 'Arreen Medical',
+    category: 'Healthcare Management',
+    description: 'Saudi-based clinical system management platform for healthcare facilities, featuring patient records, appointment scheduling, and medical workflow automation.',
+    image: '/arn.png',
+    results: ['Saudi-Based', 'Clinical Management', 'Patient Records', 'Workflow Automation'],
+    technologies: ['Healthcare', 'React', 'Node.js', 'Database Management', 'Security'],
+    duration: '3 weeks',
+    year: '2026',
+    link: 'https://arren-ksa-frontend.vercel.app/',
+    location: 'Saudi Arabia'
+  },
   {
     title: 'Simpolo Trading – Building Materials',
     client: 'Simpolo Trading',
@@ -70,7 +121,6 @@ const projects = [
     link: 'https://simpolotrading.com/',
     location: 'United Arab Emirates'
   },
-  
   {
     title: 'Wavescation Holiday Homes',
     client: 'Waves Global LLC FZ',
@@ -102,7 +152,7 @@ const projects = [
     client: 'MVEWORLD',
     category: 'Creative Agency',
     description: 'Full-service creative production agency specializing in filmmaking, advertisement creation, and event management for brand visual storytelling across Dubai and India.',
-    image: 'mve.png',
+    image: '/mve.png',
     results: ['Expert Filmmaking', 'Brand Storytelling', 'Event Management', 'Multi-Location'],
     technologies: ['Videography', 'Editing', 'Marketing', 'Production'],
     duration: '1 month',
@@ -110,7 +160,6 @@ const projects = [
     link: 'https://springgreen-ant-mje91z0olyio9p2n.builder-preview.com/',
     location: 'Dubai & India'
   },
-
   {
     title: 'HH Mobiles & Gadgets',
     client: 'Hatfak Huna Mobile Phones Trading LLC',
@@ -176,6 +225,7 @@ const projects = [
     link: 'https://junglehome.hhmobiles.com/',
     location: 'South India'
   }
+  
 ];
 
 export default function Portfolio() {
