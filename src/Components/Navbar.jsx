@@ -60,7 +60,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* p */}
             <Link to="/" className="flex items-center space-x-3 group" onClick={closeAll}>
               <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-gray-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
                 <span className="text-white font-bold text-lg">F</span>
